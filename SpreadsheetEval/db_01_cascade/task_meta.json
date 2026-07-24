@@ -1,0 +1,451 @@
+{
+  "industry": "SaaS",
+  "years": [
+    2025,
+    2026,
+    2027,
+    2028
+  ],
+  "n_years": 4,
+  "difficulty": "extreme",
+  "sheets": [
+    "Assumptions",
+    "Revenue",
+    "PPE",
+    "IncomeStatement",
+    "DebtSchedule",
+    "WorkingCapital",
+    "CashFlow",
+    "BalanceSheet",
+    "DCF",
+    "Scratch",
+    "OldForecast_v1",
+    "Notes_DoNotUse"
+  ],
+  "balance_check_cells": [
+    "BalanceSheet!B13",
+    "BalanceSheet!C13",
+    "BalanceSheet!D13",
+    "BalanceSheet!E13",
+    "BalanceSheet!F13"
+  ],
+  "headline_cells": {
+    "value_per_share": "DCF!B18",
+    "enterprise_value": "DCF!B15"
+  },
+  "twists": [
+    "capex_floor",
+    "days360",
+    "dep_begin",
+    "exit_multiple",
+    "fixed_opex",
+    "gm_ramp",
+    "midyear_disc",
+    "salvage"
+  ],
+  "category": "Debugging",
+  "subtype": "ErrorRepair",
+  "seed": 201,
+  "n_bugs": 40,
+  "n_broken_lineitems": 10,
+  "injected_bugs": [
+    {
+      "sheet": "IncomeStatement",
+      "coord": "C6",
+      "correct": "=C3*Assumptions!B5+Assumptions!B22",
+      "wrong": "=C3*Assumptions!B7+Assumptions!B22",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "opex"
+    },
+    {
+      "sheet": "IncomeStatement",
+      "coord": "D6",
+      "correct": "=D3*Assumptions!B5+Assumptions!B22",
+      "wrong": "=D3*Assumptions!B7+Assumptions!B22",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "opex"
+    },
+    {
+      "sheet": "IncomeStatement",
+      "coord": "E6",
+      "correct": "=E3*Assumptions!B5+Assumptions!B22",
+      "wrong": "=E3*Assumptions!B7+Assumptions!B22",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "opex"
+    },
+    {
+      "sheet": "IncomeStatement",
+      "coord": "F6",
+      "correct": "=F3*Assumptions!B5+Assumptions!B22",
+      "wrong": "=F3*Assumptions!B7+Assumptions!B22",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "opex"
+    },
+    {
+      "sheet": "IncomeStatement",
+      "coord": "C4",
+      "correct": "=C3*(1-(Assumptions!B4+Assumptions!B21*0))",
+      "wrong": "=C3*(1-(Assumptions!B5+Assumptions!B21*0))",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "cogs"
+    },
+    {
+      "sheet": "IncomeStatement",
+      "coord": "D4",
+      "correct": "=D3*(1-(Assumptions!B4+Assumptions!B21*1))",
+      "wrong": "=D3*(1-(Assumptions!B5+Assumptions!B21*1))",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "cogs"
+    },
+    {
+      "sheet": "IncomeStatement",
+      "coord": "E4",
+      "correct": "=E3*(1-(Assumptions!B4+Assumptions!B21*2))",
+      "wrong": "=E3*(1-(Assumptions!B5+Assumptions!B21*2))",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "cogs"
+    },
+    {
+      "sheet": "IncomeStatement",
+      "coord": "F4",
+      "correct": "=F3*(1-(Assumptions!B4+Assumptions!B21*3))",
+      "wrong": "=F3*(1-(Assumptions!B5+Assumptions!B21*3))",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "cogs"
+    },
+    {
+      "sheet": "WorkingCapital",
+      "coord": "C3",
+      "correct": "=IncomeStatement!C3*Assumptions!B9/360",
+      "wrong": "=IncomeStatement!C3*Assumptions!B10/360",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "ar"
+    },
+    {
+      "sheet": "WorkingCapital",
+      "coord": "D3",
+      "correct": "=IncomeStatement!D3*Assumptions!B9/360",
+      "wrong": "=IncomeStatement!D3*Assumptions!B10/360",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "ar"
+    },
+    {
+      "sheet": "WorkingCapital",
+      "coord": "E3",
+      "correct": "=IncomeStatement!E3*Assumptions!B9/360",
+      "wrong": "=IncomeStatement!E3*Assumptions!B10/360",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "ar"
+    },
+    {
+      "sheet": "WorkingCapital",
+      "coord": "F3",
+      "correct": "=IncomeStatement!F3*Assumptions!B9/360",
+      "wrong": "=IncomeStatement!F3*Assumptions!B10/360",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "ar"
+    },
+    {
+      "sheet": "PPE",
+      "coord": "C4",
+      "correct": "=Revenue!C3*Assumptions!B7",
+      "wrong": "=Revenue!C3*Assumptions!B5",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "capex"
+    },
+    {
+      "sheet": "PPE",
+      "coord": "D4",
+      "correct": "=MAX(Revenue!D3*Assumptions!B7,C6)",
+      "wrong": "=MAX(Revenue!D3*Assumptions!B5,C6)",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "capex"
+    },
+    {
+      "sheet": "PPE",
+      "coord": "E4",
+      "correct": "=MAX(Revenue!E3*Assumptions!B7,D6)",
+      "wrong": "=MAX(Revenue!E3*Assumptions!B5,D6)",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "capex"
+    },
+    {
+      "sheet": "PPE",
+      "coord": "F4",
+      "correct": "=MAX(Revenue!F3*Assumptions!B7,E6)",
+      "wrong": "=MAX(Revenue!F3*Assumptions!B5,E6)",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "capex"
+    },
+    {
+      "sheet": "WorkingCapital",
+      "coord": "C7",
+      "correct": "=C6-B6",
+      "wrong": "=B6-B6",
+      "error_type": "引用偏移 off-by-one-period",
+      "cascade": "错用上期数据，期间衔接断裂",
+      "kind": "delta-nwc"
+    },
+    {
+      "sheet": "WorkingCapital",
+      "coord": "D7",
+      "correct": "=D6-C6",
+      "wrong": "=C6-C6",
+      "error_type": "引用偏移 off-by-one-period",
+      "cascade": "错用上期数据，期间衔接断裂",
+      "kind": "delta-nwc"
+    },
+    {
+      "sheet": "WorkingCapital",
+      "coord": "E7",
+      "correct": "=E6-D6",
+      "wrong": "=D6-D6",
+      "error_type": "引用偏移 off-by-one-period",
+      "cascade": "错用上期数据，期间衔接断裂",
+      "kind": "delta-nwc"
+    },
+    {
+      "sheet": "WorkingCapital",
+      "coord": "F7",
+      "correct": "=F6-E6",
+      "wrong": "=E6-E6",
+      "error_type": "引用偏移 off-by-one-period",
+      "cascade": "错用上期数据，期间衔接断裂",
+      "kind": "delta-nwc"
+    },
+    {
+      "sheet": "IncomeStatement",
+      "coord": "C9",
+      "correct": "=DebtSchedule!C3*Assumptions!B12",
+      "wrong": "=DebtSchedule!C5*Assumptions!B12",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "interest"
+    },
+    {
+      "sheet": "IncomeStatement",
+      "coord": "D9",
+      "correct": "=DebtSchedule!D3*Assumptions!B12",
+      "wrong": "=DebtSchedule!D5*Assumptions!B12",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "interest"
+    },
+    {
+      "sheet": "IncomeStatement",
+      "coord": "E9",
+      "correct": "=DebtSchedule!E3*Assumptions!B12",
+      "wrong": "=DebtSchedule!E5*Assumptions!B12",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "interest"
+    },
+    {
+      "sheet": "IncomeStatement",
+      "coord": "F9",
+      "correct": "=DebtSchedule!F3*Assumptions!B12",
+      "wrong": "=DebtSchedule!F5*Assumptions!B12",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "interest"
+    },
+    {
+      "sheet": "WorkingCapital",
+      "coord": "C4",
+      "correct": "=IncomeStatement!C4*Assumptions!B10/360",
+      "wrong": "=IncomeStatement!C4*Assumptions!B11/360",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "inventory"
+    },
+    {
+      "sheet": "WorkingCapital",
+      "coord": "D4",
+      "correct": "=IncomeStatement!D4*Assumptions!B10/360",
+      "wrong": "=IncomeStatement!D4*Assumptions!B11/360",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "inventory"
+    },
+    {
+      "sheet": "WorkingCapital",
+      "coord": "E4",
+      "correct": "=IncomeStatement!E4*Assumptions!B10/360",
+      "wrong": "=IncomeStatement!E4*Assumptions!B11/360",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "inventory"
+    },
+    {
+      "sheet": "WorkingCapital",
+      "coord": "F4",
+      "correct": "=IncomeStatement!F4*Assumptions!B10/360",
+      "wrong": "=IncomeStatement!F4*Assumptions!B11/360",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "inventory"
+    },
+    {
+      "sheet": "PPE",
+      "coord": "C6",
+      "correct": "=C3*(1-Assumptions!B20)/Assumptions!B8",
+      "wrong": "=C3*(1+Assumptions!B20)/Assumptions!B8",
+      "error_type": "符号取反 sign-flip",
+      "cascade": "改变本项数值，向下游净额传播",
+      "kind": "depreciation"
+    },
+    {
+      "sheet": "PPE",
+      "coord": "D6",
+      "correct": "=D3*(1-Assumptions!B20)/Assumptions!B8",
+      "wrong": "=D3*(1+Assumptions!B20)/Assumptions!B8",
+      "error_type": "符号取反 sign-flip",
+      "cascade": "改变本项数值，向下游净额传播",
+      "kind": "depreciation"
+    },
+    {
+      "sheet": "PPE",
+      "coord": "E6",
+      "correct": "=E3*(1-Assumptions!B20)/Assumptions!B8",
+      "wrong": "=E3*(1+Assumptions!B20)/Assumptions!B8",
+      "error_type": "符号取反 sign-flip",
+      "cascade": "改变本项数值，向下游净额传播",
+      "kind": "depreciation"
+    },
+    {
+      "sheet": "PPE",
+      "coord": "F6",
+      "correct": "=F3*(1-Assumptions!B20)/Assumptions!B8",
+      "wrong": "=F3*(1+Assumptions!B20)/Assumptions!B8",
+      "error_type": "符号取反 sign-flip",
+      "cascade": "改变本项数值，向下游净额传播",
+      "kind": "depreciation"
+    },
+    {
+      "sheet": "WorkingCapital",
+      "coord": "C5",
+      "correct": "=IncomeStatement!C4*Assumptions!B11/360",
+      "wrong": "=IncomeStatement!C4*Assumptions!B9/360",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "ap"
+    },
+    {
+      "sheet": "WorkingCapital",
+      "coord": "D5",
+      "correct": "=IncomeStatement!D4*Assumptions!B11/360",
+      "wrong": "=IncomeStatement!D4*Assumptions!B9/360",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "ap"
+    },
+    {
+      "sheet": "WorkingCapital",
+      "coord": "E5",
+      "correct": "=IncomeStatement!E4*Assumptions!B11/360",
+      "wrong": "=IncomeStatement!E4*Assumptions!B9/360",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "ap"
+    },
+    {
+      "sheet": "WorkingCapital",
+      "coord": "F5",
+      "correct": "=IncomeStatement!F4*Assumptions!B11/360",
+      "wrong": "=IncomeStatement!F4*Assumptions!B9/360",
+      "error_type": "引用错误 wrong-cell",
+      "cascade": "引用了错误的科目，勾稽关系被破坏",
+      "kind": "ap"
+    },
+    {
+      "sheet": "DebtSchedule",
+      "coord": "C5",
+      "correct": "=C3-C4",
+      "wrong": "=C3+C4",
+      "error_type": "符号取反 sign-flip",
+      "cascade": "改变本项数值，向下游净额传播",
+      "kind": "debt-end"
+    },
+    {
+      "sheet": "DebtSchedule",
+      "coord": "D5",
+      "correct": "=D3-D4",
+      "wrong": "=D3+D4",
+      "error_type": "符号取反 sign-flip",
+      "cascade": "改变本项数值，向下游净额传播",
+      "kind": "debt-end"
+    },
+    {
+      "sheet": "DebtSchedule",
+      "coord": "E5",
+      "correct": "=E3-E4",
+      "wrong": "=E3+E4",
+      "error_type": "符号取反 sign-flip",
+      "cascade": "改变本项数值，向下游净额传播",
+      "kind": "debt-end"
+    },
+    {
+      "sheet": "DebtSchedule",
+      "coord": "F5",
+      "correct": "=F3-F4",
+      "wrong": "=F3+F4",
+      "error_type": "符号取反 sign-flip",
+      "cascade": "改变本项数值，向下游净额传播",
+      "kind": "debt-end"
+    }
+  ],
+  "assumptions": {
+    "base_rev": 21451.02,
+    "growth": [
+      0.2994,
+      0.195,
+      0.2809,
+      0.2769
+    ],
+    "gm": 0.5797,
+    "opex_pct": 0.1779,
+    "tax": 0.2223,
+    "capex_pct": 0.0891,
+    "dep_years": 7,
+    "dso": 43,
+    "dio": 89,
+    "dpo": 66,
+    "int_rate": 0.0892,
+    "wacc": 0.0931,
+    "tg": 0.0234,
+    "shares": 2346,
+    "cash0": 2082.57,
+    "ppe_gross0": 7504.73,
+    "accdep0": 2675.52,
+    "debt0": 11504.1,
+    "repay": [
+      888.9,
+      733.99,
+      944.8,
+      1113.52
+    ],
+    "salvage_pct": 0.1262,
+    "gm_ramp": 0.0162,
+    "fixed_opex": 1194.63,
+    "exit_mult": 9.37,
+    "days_basis": 360
+  },
+  "modification_set_size": 199,
+  "task_id": "db_01_cascade"
+}

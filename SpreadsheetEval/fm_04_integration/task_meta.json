@@ -1,0 +1,98 @@
+{
+  "industry": "SaaS",
+  "years": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028
+  ],
+  "n_years": 5,
+  "difficulty": "extreme",
+  "sheets": [
+    "Assumptions",
+    "Revenue",
+    "PPE",
+    "IncomeStatement",
+    "DebtSchedule",
+    "WorkingCapital",
+    "CashFlow",
+    "BalanceSheet",
+    "DCF",
+    "旧版测算_废弃",
+    "OldForecast_v1",
+    "OldForecast_v11"
+  ],
+  "balance_check_cells": [
+    "BalanceSheet!B13",
+    "BalanceSheet!C13",
+    "BalanceSheet!D13",
+    "BalanceSheet!E13",
+    "BalanceSheet!F13",
+    "BalanceSheet!G13"
+  ],
+  "headline_cells": {
+    "value_per_share": "DCF!B18",
+    "enterprise_value": "DCF!B15"
+  },
+  "twists": [
+    "avg_interest",
+    "capex_floor",
+    "days360",
+    "dep_begin",
+    "exit_multiple",
+    "gm_ramp",
+    "midyear_disc",
+    "salvage"
+  ],
+  "category": "Generation",
+  "subtype": "FinancialModeling",
+  "seed": 104,
+  "region": "downstream",
+  "build_sheets": [
+    "CashFlow",
+    "BalanceSheet",
+    "DCF"
+  ],
+  "n_build_cells": 161,
+  "assumptions": {
+    "base_rev": 31420.97,
+    "growth": [
+      0.1724,
+      0.196,
+      0.2842,
+      0.3055,
+      0.1238
+    ],
+    "gm": 0.4117,
+    "opex_pct": 0.2654,
+    "tax": 0.1677,
+    "capex_pct": 0.0959,
+    "dep_years": 7,
+    "dso": 58,
+    "dio": 71,
+    "dpo": 33,
+    "int_rate": 0.0831,
+    "wacc": 0.1191,
+    "tg": 0.0259,
+    "shares": 3440,
+    "cash0": 7683.3,
+    "ppe_gross0": 8401.82,
+    "accdep0": 1897.34,
+    "debt0": 3366.49,
+    "repay": [
+      700.86,
+      519.47,
+      1165.31,
+      1075.58,
+      335.16
+    ],
+    "salvage_pct": 0.085,
+    "gm_ramp": 0.0298,
+    "fixed_opex": 0.0,
+    "exit_mult": 7.2,
+    "days_basis": 360
+  },
+  "modification_set_size": 161,
+  "task_id": "fm_04_integration"
+}

@@ -1,0 +1,98 @@
+{
+  "industry": "地产",
+  "years": [
+    2025,
+    2026,
+    2027,
+    2028,
+    2029
+  ],
+  "n_years": 5,
+  "difficulty": "extreme",
+  "sheets": [
+    "Assumptions",
+    "Revenue",
+    "PPE",
+    "IncomeStatement",
+    "DebtSchedule",
+    "WorkingCapital",
+    "CashFlow",
+    "BalanceSheet",
+    "DCF",
+    "Notes_DoNotUse",
+    "临时草稿",
+    "临时草稿1"
+  ],
+  "balance_check_cells": [
+    "BalanceSheet!B13",
+    "BalanceSheet!C13",
+    "BalanceSheet!D13",
+    "BalanceSheet!E13",
+    "BalanceSheet!F13",
+    "BalanceSheet!G13"
+  ],
+  "headline_cells": {
+    "value_per_share": "DCF!B18",
+    "enterprise_value": "DCF!B15"
+  },
+  "twists": [
+    "avg_interest",
+    "capex_floor",
+    "days360",
+    "exit_multiple",
+    "fixed_opex",
+    "gm_ramp",
+    "midyear_disc",
+    "salvage"
+  ],
+  "category": "Generation",
+  "subtype": "FinancialModeling",
+  "seed": 106,
+  "region": "downstream",
+  "build_sheets": [
+    "CashFlow",
+    "BalanceSheet",
+    "DCF"
+  ],
+  "n_build_cells": 161,
+  "assumptions": {
+    "base_rev": 8536.44,
+    "growth": [
+      0.3367,
+      0.3088,
+      0.133,
+      0.3055,
+      0.305
+    ],
+    "gm": 0.4195,
+    "opex_pct": 0.276,
+    "tax": 0.2046,
+    "capex_pct": 0.0816,
+    "dep_years": 10,
+    "dso": 53,
+    "dio": 74,
+    "dpo": 44,
+    "int_rate": 0.0773,
+    "wacc": 0.1039,
+    "tg": 0.0273,
+    "shares": 1925,
+    "cash0": 3087.97,
+    "ppe_gross0": 11106.99,
+    "accdep0": 2054.54,
+    "debt0": 5592.0,
+    "repay": [
+      597.77,
+      1078.51,
+      425.98,
+      376.82,
+      383.71
+    ],
+    "salvage_pct": 0.1109,
+    "gm_ramp": 0.0199,
+    "fixed_opex": 1349.37,
+    "exit_mult": 6.92,
+    "days_basis": 360
+  },
+  "modification_set_size": 161,
+  "task_id": "fm_06_template"
+}

@@ -1,0 +1,191 @@
+{
+  "model": "moonshotai/kimi-k3",
+  "pass_at_1": 0.2,
+  "n_tasks": 10,
+  "n_passed": 2,
+  "note": "Single-attempt, no-fallback, 600s hard per-call deadline. reward=0 arises either from substantive wrong values (model answered but violated stated house conventions / made unexpected edits) or from failing to finish within 600s on the largest workbooks. Concurrent eval (run_eval_concurrent.py).",
+  "results": [
+    {
+      "task_id": "fm_01_saas_dcf",
+      "reward": 0,
+      "error": "all models failed: hard deadline 600s exceeded"
+    },
+    {
+      "task_id": "fm_02_forecast",
+      "reward": 0,
+      "n_edits": 164,
+      "modset": 220,
+      "wrong": 39,
+      "unexpected": 0,
+      "sample_wrong": [
+        {
+          "cell": "IncomeStatement!D12",
+          "expected": -670.19,
+          "got": -507.4
+        },
+        {
+          "cell": "CashFlow!C11",
+          "expected": -2002.06,
+          "got": -1668.11
+        },
+        {
+          "cell": "BalanceSheet!D3",
+          "expected": 2142.89,
+          "got": 2639.64
+        },
+        {
+          "cell": "BalanceSheet!D12",
+          "expected": 16215.12,
+          "got": 16711.86
+        },
+        {
+          "cell": "CashFlow!D13",
+          "expected": 2142.89,
+          "got": 2639.64
+        }
+      ]
+    },
+    {
+      "task_id": "fm_03_valuation",
+      "reward": 0,
+      "n_edits": 128,
+      "modset": 168,
+      "wrong": 32,
+      "unexpected": 7,
+      "sample_wrong": [
+        {
+          "cell": "CashFlow!G7",
+          "expected": -13543.15,
+          "got": 13543.15
+        },
+        {
+          "cell": "CashFlow!C5",
+          "expected": -1161.75,
+          "got": 1161.75
+        },
+        {
+          "cell": "DCF!B18",
+          "expected": 240.71,
+          "got": null
+        },
+        {
+          "cell": "DCF!B15",
+          "expected": 407480.51,
+          "got": null
+        },
+        {
+          "cell": "DCF!B16",
+          "expected": 3564.07,
+          "got": null
+        }
+      ]
+    },
+    {
+      "task_id": "fm_04_integration",
+      "reward": 0,
+      "n_edits": 161,
+      "modset": 161,
+      "wrong": 32,
+      "unexpected": 7,
+      "sample_wrong": [
+        {
+          "cell": "CashFlow!G7",
+          "expected": -7960.56,
+          "got": 7960.56
+        },
+        {
+          "cell": "CashFlow!C5",
+          "expected": -1305.2,
+          "got": 1305.2
+        },
+        {
+          "cell": "DCF!B18",
+          "expected": 27.47,
+          "got": null
+        },
+        {
+          "cell": "DCF!B16",
+          "expected": -4316.81,
+          "got": null
+        },
+        {
+          "cell": "CashFlow!C7",
+          "expected": -3532.76,
+          "got": 3532.76
+        }
+      ]
+    },
+    {
+      "task_id": "fm_06_template",
+      "reward": 0,
+      "error": "all models failed: hard deadline 600s exceeded"
+    },
+    {
+      "task_id": "db_01_cascade",
+      "reward": 0,
+      "error": "all models failed: hard deadline 600s exceeded"
+    },
+    {
+      "task_id": "db_02_reference",
+      "reward": 0,
+      "n_edits": 47,
+      "modset": 236,
+      "wrong": 0,
+      "unexpected": 1,
+      "sample_wrong": []
+    },
+    {
+      "task_id": "db_04_period",
+      "reward": 1,
+      "n_edits": 55,
+      "modset": 234,
+      "wrong": 0,
+      "unexpected": 0,
+      "sample_wrong": []
+    },
+    {
+      "task_id": "db_05_threestmt",
+      "reward": 0,
+      "n_edits": 36,
+      "modset": 188,
+      "wrong": 51,
+      "unexpected": 1,
+      "sample_wrong": [
+        {
+          "cell": "IncomeStatement!D12",
+          "expected": 15863.08,
+          "got": 15884.69
+        },
+        {
+          "cell": "IncomeStatement!F12",
+          "expected": 27308.39,
+          "got": 27337.32
+        },
+        {
+          "cell": "IncomeStatement!D10",
+          "expected": 18993.15,
+          "got": 19019.02
+        },
+        {
+          "cell": "CashFlow!E11",
+          "expected": 16772.99,
+          "got": 16805.55
+        },
+        {
+          "cell": "CashFlow!E13",
+          "expected": 42014.22,
+          "got": 42090.2
+        }
+      ]
+    },
+    {
+      "task_id": "db_06_deepchain",
+      "reward": 1,
+      "n_edits": 47,
+      "modset": 236,
+      "wrong": 0,
+      "unexpected": 0,
+      "sample_wrong": []
+    }
+  ]
+}

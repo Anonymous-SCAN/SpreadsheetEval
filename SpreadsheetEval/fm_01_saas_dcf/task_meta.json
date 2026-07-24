@@ -1,0 +1,98 @@
+{
+  "industry": "能源",
+  "years": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028
+  ],
+  "n_years": 5,
+  "difficulty": "extreme",
+  "sheets": [
+    "Assumptions",
+    "Revenue",
+    "PPE",
+    "IncomeStatement",
+    "DebtSchedule",
+    "WorkingCapital",
+    "CashFlow",
+    "BalanceSheet",
+    "DCF",
+    "旧版测算_废弃",
+    "Archive_2019",
+    "Notes_DoNotUse"
+  ],
+  "balance_check_cells": [
+    "BalanceSheet!B13",
+    "BalanceSheet!C13",
+    "BalanceSheet!D13",
+    "BalanceSheet!E13",
+    "BalanceSheet!F13",
+    "BalanceSheet!G13"
+  ],
+  "headline_cells": {
+    "value_per_share": "DCF!B18",
+    "enterprise_value": "DCF!B15"
+  },
+  "twists": [
+    "avg_interest",
+    "capex_floor",
+    "dep_begin",
+    "exit_multiple",
+    "fixed_opex",
+    "gm_ramp",
+    "midyear_disc",
+    "salvage"
+  ],
+  "category": "Generation",
+  "subtype": "FinancialModeling",
+  "seed": 101,
+  "region": "downstream",
+  "build_sheets": [
+    "CashFlow",
+    "BalanceSheet",
+    "DCF"
+  ],
+  "n_build_cells": 161,
+  "assumptions": {
+    "base_rev": 37068.1,
+    "growth": [
+      0.244,
+      0.2025,
+      0.1312,
+      0.2358,
+      0.2585
+    ],
+    "gm": 0.6895,
+    "opex_pct": 0.208,
+    "tax": 0.2675,
+    "capex_pct": 0.073,
+    "dep_years": 7,
+    "dso": 39,
+    "dio": 46,
+    "dpo": 42,
+    "int_rate": 0.0481,
+    "wacc": 0.1123,
+    "tg": 0.0281,
+    "shares": 2369,
+    "cash0": 4830.09,
+    "ppe_gross0": 10564.4,
+    "accdep0": 2912.28,
+    "debt0": 6635.05,
+    "repay": [
+      487.44,
+      687.14,
+      573.86,
+      399.72,
+      1041.05
+    ],
+    "salvage_pct": 0.1244,
+    "gm_ramp": 0.0184,
+    "fixed_opex": 2243.66,
+    "exit_mult": 7.3,
+    "days_basis": 365
+  },
+  "modification_set_size": 161,
+  "task_id": "fm_01_saas_dcf"
+}

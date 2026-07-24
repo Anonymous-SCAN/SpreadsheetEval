@@ -1,0 +1,122 @@
+[
+  {
+    "task_id": "fm_01_saas_dcf",
+    "category": "Generation",
+    "difficulty": "extreme",
+    "industry": "能源",
+    "years": "2024-2028",
+    "sheets": 12,
+    "modset": 161,
+    "n_bugs": null,
+    "oracle": 1,
+    "noop": 0
+  },
+  {
+    "task_id": "fm_02_forecast",
+    "category": "Generation",
+    "difficulty": "extreme",
+    "industry": "制造",
+    "years": "2025-2029",
+    "sheets": 12,
+    "modset": 220,
+    "n_bugs": null,
+    "oracle": 1,
+    "noop": 0
+  },
+  {
+    "task_id": "fm_03_valuation",
+    "category": "Generation",
+    "difficulty": "extreme",
+    "industry": "地产",
+    "years": "2025-2029",
+    "sheets": 12,
+    "modset": 168,
+    "n_bugs": null,
+    "oracle": 1,
+    "noop": 0
+  },
+  {
+    "task_id": "fm_04_integration",
+    "category": "Generation",
+    "difficulty": "extreme",
+    "industry": "SaaS",
+    "years": "2024-2028",
+    "sheets": 12,
+    "modset": 161,
+    "n_bugs": null,
+    "oracle": 1,
+    "noop": 0
+  },
+  {
+    "task_id": "fm_06_template",
+    "category": "Generation",
+    "difficulty": "extreme",
+    "industry": "地产",
+    "years": "2025-2029",
+    "sheets": 12,
+    "modset": 161,
+    "n_bugs": null,
+    "oracle": 1,
+    "noop": 0
+  },
+  {
+    "task_id": "db_01_cascade",
+    "category": "Debugging",
+    "difficulty": "extreme",
+    "industry": "SaaS",
+    "years": "2025-2028",
+    "sheets": 12,
+    "modset": 199,
+    "n_bugs": 40,
+    "oracle": 1,
+    "noop": 0
+  },
+  {
+    "task_id": "db_02_reference",
+    "category": "Debugging",
+    "difficulty": "extreme",
+    "industry": "医疗",
+    "years": "2025-2029",
+    "sheets": 12,
+    "modset": 236,
+    "n_bugs": 47,
+    "oracle": 1,
+    "noop": 0
+  },
+  {
+    "task_id": "db_04_period",
+    "category": "Debugging",
+    "difficulty": "extreme",
+    "industry": "医疗",
+    "years": "2024-2028",
+    "sheets": 12,
+    "modset": 234,
+    "n_bugs": 55,
+    "oracle": 1,
+    "noop": 0
+  },
+  {
+    "task_id": "db_05_threestmt",
+    "category": "Debugging",
+    "difficulty": "extreme",
+    "industry": "医疗",
+    "years": "2025-2028",
+    "sheets": 11,
+    "modset": 188,
+    "n_bugs": 40,
+    "oracle": 1,
+    "noop": 0
+  },
+  {
+    "task_id": "db_06_deepchain",
+    "category": "Debugging",
+    "difficulty": "extreme",
+    "industry": "SaaS",
+    "years": "2024-2028",
+    "sheets": 12,
+    "modset": 236,
+    "n_bugs": 47,
+    "oracle": 1,
+    "noop": 0
+  }
+]
